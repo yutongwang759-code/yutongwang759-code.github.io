@@ -417,6 +417,56 @@
 
 
         /* =====================================================
+           EDUCATION LOGOS
+        ===================================================== */
+
+        .education-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 30px 0;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .education-logo {
+            width: 72px;
+            height: 72px;
+            min-width: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(11, 27, 61, 0.05);
+        }
+
+        .education-logo img {
+            width: 58px;
+            height: 58px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .education-content {
+            flex: 1;
+        }
+
+        .education-date {
+            margin-bottom: 4px;
+            font-size: 13px;
+            color: var(--text-sub);
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+
+        /* =====================================================
            EXPERIENCE
         ===================================================== */
 
@@ -698,6 +748,22 @@
                 font-size: 15px;
             }
 
+            .education-item {
+                gap: 16px;
+            }
+
+            .education-logo {
+                width: 58px;
+                height: 58px;
+                min-width: 58px;
+                border-radius: 10px;
+            }
+
+            .education-logo img {
+                width: 46px;
+                height: 46px;
+            }
+
             .experience-logo {
                 width: 58px;
                 height: 58px;
@@ -890,15 +956,25 @@
             </h2>
 
 
-            <!-- SNU -->
+            <!-- ================= SNU ================= -->
 
-            <div class="exp-item">
+            <div class="education-item">
 
-                <div class="exp-date">
-                    Sep 2026 - Present
+                <div class="education-logo">
+
+                    <img
+                        src="seoulnationalunilogo.jpeg"
+                        alt="Seoul National University logo"
+                    >
+
                 </div>
 
-                <div class="exp-content">
+
+                <div class="education-content">
+
+                    <div class="education-date">
+                        Sep 2026 - Present
+                    </div>
 
                     <div class="exp-org">
                         Seoul National University (SNU)
@@ -923,15 +999,25 @@
 
 
 
-            <!-- SOOCHOW -->
+            <!-- ================= SOOCHOW ================= -->
 
-            <div class="exp-item">
+            <div class="education-item">
 
-                <div class="exp-date">
-                    Sep 2022 - Jun 2026
+                <div class="education-logo">
+
+                    <img
+                        src="soochowunilogo.jepg"
+                        alt="Soochow University logo"
+                    >
+
                 </div>
 
-                <div class="exp-content">
+
+                <div class="education-content">
+
+                    <div class="education-date">
+                        Sep 2022 - Jun 2026
+                    </div>
 
                     <div class="exp-org">
                         Soochow University
@@ -957,377 +1043,4 @@
 
             </div>
 
-        </div>
 
-    </section>
-
-
-
-    <!-- =====================================================
-         EXPERIENCE
-    ===================================================== -->
-
-    <section id="experience" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Experience
-            </h2>
-
-
-            <!-- ================= BOSCH ================= -->
-
-            <div class="experience-item">
-
-                <div class="experience-logo">
-
-                    <img
-                        src="Boschlogo.jpeg"
-                        alt="Bosch logo"
-                    >
-
-                </div>
-
-
-                <div class="experience-content">
-
-                    <h3 class="experience-title">
-                        Business Compliance &amp; Strategy Intern
-                    </h3>
-
-
-                    <div class="experience-company">
-                        Bosch
-                    </div>
-
-
-                    <div class="experience-date">
-                        Mar 2026 – Jul 2026
-                    </div>
-
-
-                    <ul>
-
-                        <li>
-                            Evaluated regulatory, legal, and market frameworks
-                            to support Bosch Engineering (BEG)’s strategic pivot
-                            from customized technical consulting services to
-                            standardized product offerings.
-                        </li>
-
-                        <li>
-                            Developed executive pitch decks and marketing
-                            materials for newly standardized solutions,
-                            supporting enterprise client engagement at
-                            high-profile events including Auto China 2026.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ================= TONGCHENG ================= -->
-
-            <div class="experience-item">
-
-                <div class="experience-logo">
-
-                    <img
-                        src="Tongchenglogo.png"
-                        alt="Tongcheng Travel logo"
-                    >
-
-                </div>
-
-
-                <div class="experience-content">
-
-                    <h3 class="experience-title">
-                        HRBP Intern
-                    </h3>
-
-
-                    <div class="experience-company">
-                        Tongcheng Travel
-                    </div>
-
-
-                    <div class="experience-date">
-                        Jun 2025 – Sep 2025
-                    </div>
-
-
-                    <ul>
-
-                        <li>
-                            Supported the recruitment of regional managers
-                            and contributed to recruitment strategy development,
-                            achieving a
-                            <strong>100% recruitment completion rate</strong>
-                            and successfully filling City Manager positions
-                            across Southwest China.
-                        </li>
-
-                        <li>
-                            Assisted in the implementation of the promotion
-                            plan for the car-rental business line.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ================= IPG / UM ================= -->
-
-            <div class="experience-item">
-
-                <div class="experience-logo">
-
-                    <img
-                        src="UMlogo.jpeg"
-                        alt="UM logo"
-                    >
-
-                </div>
-
-
-                <div class="experience-content">
-
-                    <h3 class="experience-title">
-                        Strategy Planning Intern
-                    </h3>
-
-
-                    <div class="experience-company">
-                        IPG – UM
-                    </div>
-
-
-                    <div class="experience-date">
-                        Jun 2024 – Sep 2024
-                    </div>
-
-
-                    <ul>
-
-                        <li>
-                            Tracked and evaluated core campaign metrics for
-                            flagship clients including New Balance and
-                            Burger King during high-volume Summer Sale
-                            campaigns, synthesizing weekly and monthly
-                            performance reports to inform media strategy
-                            optimization.
-                        </li>
-
-                        <li>
-                            Independently planned and executed
-                            <strong>Impact Day</strong>, an internal
-                            corporate ESG initiative, managing stakeholder
-                            alignment, event logistics, and strategic
-                            communications.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         SKILLS & LANGUAGES
-    ===================================================== -->
-
-    <section id="skills" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Skills &amp; Languages
-            </h2>
-
-
-            <div class="skills-content">
-
-
-                <!-- TECHNICAL -->
-
-                <div class="skill-group">
-
-                    <h3 class="skill-group-title">
-                        Technical &amp; Data
-                    </h3>
-
-                    <div class="skill-tags">
-
-                        <span class="skill-tag">
-                            Python (Pandas, NLP, Jieba, WordCloud)
-                        </span>
-
-                        <span class="skill-tag">
-                            SQL
-                        </span>
-
-                        <span class="skill-tag">
-                            Data Monitoring
-                        </span>
-
-                        <span class="skill-tag">
-                            Git / GitHub
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- BUSINESS -->
-
-                <div class="skill-group">
-
-                    <h3 class="skill-group-title">
-                        Business &amp; PR
-                    </h3>
-
-                    <div class="skill-tags">
-
-                        <span class="skill-tag">
-                            International Trade
-                        </span>
-
-                        <span class="skill-tag">
-                            Global Business Strategy
-                        </span>
-
-                        <span class="skill-tag">
-                            Crisis PR
-                        </span>
-
-                        <span class="skill-tag">
-                            Influencer Marketing
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- LANGUAGES -->
-
-                <div class="skill-group">
-
-                    <h3 class="skill-group-title">
-                        Languages
-                    </h3>
-
-                    <div class="skill-tags">
-
-                        <span class="skill-tag">
-                            Mandarin (Native)
-                        </span>
-
-                        <span class="skill-tag">
-                            English (IELTS 7.5)
-                        </span>
-
-                        <span class="skill-tag">
-                            Korean (TOPIK 6)
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         FOOTER / CONTACT
-    ===================================================== -->
-
-    <footer id="contact" class="footer">
-
-        <div class="container">
-
-            <div class="footer-socials">
-
-                <a href="mailto:ritawang0486@snu.ac.kr">
-                    Email
-                </a>
-
-
-                <a
-                    href="https://github.com/yutongwang759-code"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-
-                <a
-                    href="https://www.linkedin.com/in/rita-wang-9108ab3b3/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-
-                <a
-                    href="Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    CV
-                </a>
-
-            </div>
-
-
-            <p>
-                &copy; 2026 Yutong Wang. All Rights Reserved.
-            </p>
-
-
-            <p
-                style="
-                    margin-top: 6px;
-                    font-size: 13px;
-                    opacity: 0.8;
-                "
-            >
-                Master's Candidate in International Studies,
-                SNU GSIS
-            </p>
-
-        </div>
-
-    </footer>
-
-
-</body>
-
-</html>
