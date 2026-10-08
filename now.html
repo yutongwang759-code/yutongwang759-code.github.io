@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now | Yutong Wang (Rita)</title>
+    <meta name="description" content="Recent updates, current projects, research, and thoughts by Yutong Wang (Rita).">
+    <style>
+        :root {
+            --primary-color: #0B1B3D;
+            --accent-gold: #C5A059;
+            --bg-light: #F8FAFC;
+            --text-main: #1E293B;
+            --text-sub: #64748B;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-main);
+            background: #FFFFFF;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        a:hover { color: var(--accent-gold); }
+
+        .navbar {
+            background-color: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #E2E8F0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 18px 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 1.5px;
+        }
+
+        .back-link {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 600;
+        }
+
+        .page-header {
+            padding: 85px 0 55px;
+            background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--accent-gold);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        .intro {
+            max-width: 680px;
+            color: var(--text-sub);
+            font-size: 16px;
+        }
+
+        .updates {
+            padding: 60px 0 100px;
+        }
+
+        .update {
+            position: relative;
+            padding: 0 0 48px 34px;
+            margin-bottom: 48px;
+            border-left: 2px solid #E2E8F0;
+        }
+
+        .update::before {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            background: #FFFFFF;
+            border: 2px solid var(--accent-gold);
+            border-radius: 50%;
+        }
+
+        .update-date {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: var(--text-sub);
+            margin-bottom: 8px;
+        }
+
+        .update-title {
+            font-size: 22px;
+            line-height: 1.4;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .update p {
+            font-size: 15px;
+            color: var(--text-main);
+            max-width: 720px;
+        }
+
+        .update-tag {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid #E2E8F0;
+            background: #F8FAFC;
+            color: var(--primary-color);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .footer {
+            padding: 35px 0;
+            background: var(--primary-color);
+            text-align: center;
+            color: #94A3B8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 0 20px; }
+            .page-header { padding: 60px 0 40px; }
+            h1 { font-size: 34px; }
+            .updates { padding-top: 45px; }
+            .update { padding-left: 24px; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="nav-logo">YUTONG WANG (RITA)</a>
+            <a href="index.html" class="back-link">← Back to Website</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="eyebrow">Personal Updates</div>
+            <h1>Now</h1>
+            <p class="intro">
+                What I am currently learning, working on, exploring, and thinking about.
+            </p>
+        </div>
+    </header>
+
+    <main class="updates">
+        <div class="container">
+
+            <!-- Add new updates above older entries. -->
+
+            <article class="update">
+                <div class="update-date">October 2026</div>
+                <h2 class="update-title">Building my personal academic portfolio</h2>
+                <p>
+                    I am developing this website as a living portfolio for my
+                    academic interests, professional experience, research projects,
+                    and ongoing work.
+                </p>
+                <span class="update-tag">Website</span>
+            </article>
+
+            <article class="update">
+                <div class="update-date">September 2026</div>
+                <h2 class="update-title">Beginning my graduate studies at SNU GSIS</h2>
+                <p>
+                    Started my master's studies at Seoul National University Graduate
+                    School of International Studies, focusing on International
+                    Commerce and International Business Management.
+                </p>
+                <span class="update-tag">Graduate School</span>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            © 2026 Yutong Wang. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
