@@ -1,448 +1,1329 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Yutong Wang (Rita) | Personal Website</title>
-    
-    <!-- SEO 搜索引擎优化 -->
-    <meta name="description" content="Yutong Wang (Rita) - Personal Website. Master's Candidate at Seoul National University (SNU GSIS) specializing in International Commerce and Brand Marketing Analytics.">
-    <meta name="keywords" content="Yutong Wang, 王语彤, SNU GSIS, 首尔大学, International Commerce, Portfolio">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Yutong Wang (Rita) - Personal Website. Master's Candidate at Seoul National University (SNU GSIS) specializing in International Commerce and Global Business Strategy.">
+
+    <meta name="keywords"
+        content="Yutong Wang, 王语彤, Rita Wang, SNU GSIS, Seoul National University, International Commerce, Global Business Strategy">
 
     <style>
-        /* --- 核心高级设计变量 --- */
+
+        /* =====================================================
+           CORE DESIGN VARIABLES
+        ===================================================== */
+
         :root {
-            --primary-color: #0B1B3D;    /* 深宵蓝（提取自照片背景） */
-            --accent-gold: #C5A059;      /* 质感高级金 */
-            --bg-light: #F8FAFC;         /* 极简冰白衬底 */
-            --text-main: #1E293B;        /* 高对比度墨黑 */
-            --text-sub: #64748B;         /* 高级灰 */
-            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --primary-color: #0B1B3D;
+            --accent-gold: #C5A059;
+            --bg-light: #F8FAFC;
+            --text-main: #1E293B;
+            --text-sub: #64748B;
+
+            --font-main:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                "Helvetica Neue",
+                Arial,
+                sans-serif;
         }
 
-        /* --- 基础重置 --- */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: var(--font-main); color: var(--text-main); background-color: #FFFFFF; line-height: 1.8; -webkit-font-smoothing: antialiased; }
-        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
-        a:hover { color: var(--accent-gold); }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
-        @media (max-width: 768px) { .container { padding: 0 20px; } }
+        /* =====================================================
+           BASIC RESET
+        ===================================================== */
 
-        /* --- 导航栏 --- */
-        .navbar { background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 1000; padding: 18px 0; }
-        .nav-content { display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { font-size: 20px; font-weight: 800; color: var(--primary-color); letter-spacing: 1.5px; }
-        .nav-links { display: flex; gap: 32px; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; }
-        @media (max-width: 768px) { .nav-links { display: none; } }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-        /* --- 首页 Hero 区域（高级双栏布局）--- */
-        .hero { background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%); padding: 90px 0; border-bottom: 1px solid #E2E8F0; position: relative; overflow: hidden; }
-        .hero-grid { display: flex; align-items: center; justify-content: space-between; gap: 60px; }
-        .hero-text { flex: 1.2; }
-        
-        .hero-badge { display: inline-block; background-color: rgba(11, 27, 61, 0.06); color: var(--primary-color); padding: 4px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 18px; border: 1px solid rgba(11, 27, 61, 0.1); }
-        .hero-name { font-size: 46px; font-weight: 900; color: var(--primary-color); letter-spacing: -0.5px; margin-bottom: 12px; line-height: 1.15; }
-        .hero-title { font-size: 15px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; font-weight: 600; }
-        .hero-bio { font-size: 16.5px; color: var(--text-main); margin-bottom: 35px; font-weight: 400; line-height: 1.8; }
-        
-        .hero-btns { display: flex; gap: 16px; }
-        .btn { padding: 12px 28px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 6px; transition: all 0.3s ease; }
-        .btn-primary { background-color: var(--primary-color); color: #FFF; border: 1px solid var(--primary-color); box-shadow: 0 4px 14px rgba(11, 27, 61, 0.2); }
-        .btn-primary:hover { background-color: #1E3A8A; transform: translateY(-2px); }
-        .btn-secondary { background-color: #FFF; color: var(--primary-color); border: 1px solid #CBD5E1; }
-        .btn-secondary:hover { border-color: var(--primary-color); background-color: #F8FAFC; }
+        html {
+            scroll-behavior: smooth;
+        }
 
-        /* --- 核心照片卡片区域 --- */
-        .hero-image-wrapper { flex: 0.8; display: flex; justify-content: center; position: relative; }
-        
+        body {
+            font-family: var(--font-main);
+            color: var(--text-main);
+            background-color: #FFFFFF;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-gold);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #E2E8F0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 18px 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 1.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #F8FAFC 0%,
+                #EFF6FF 100%
+            );
+
+            padding: 90px 0;
+
+            border-bottom: 1px solid #E2E8F0;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1.2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+
+            background-color: rgba(11, 27, 61, 0.06);
+            color: var(--primary-color);
+
+            padding: 4px 14px;
+            border-radius: 20px;
+
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+            margin-bottom: 18px;
+
+            border: 1px solid rgba(11, 27, 61, 0.1);
+        }
+
+        .hero-name {
+            font-size: 46px;
+            font-weight: 900;
+            color: var(--primary-color);
+
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            line-height: 1.15;
+        }
+
+        .hero-title {
+            font-size: 15px;
+            color: var(--text-sub);
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .hero-bio {
+            font-size: 16.5px;
+            color: var(--text-main);
+
+            margin-bottom: 35px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           HERO BUTTONS
+        ===================================================== */
+
+        .hero-btns {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 12px 28px;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            border-radius: 6px;
+
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+
+            border: 1px solid var(--primary-color);
+
+            box-shadow:
+                0 4px 14px rgba(11, 27, 61, 0.2);
+        }
+
+        .btn-primary:hover {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #FFFFFF;
+            color: var(--primary-color);
+
+            border: 1px solid #CBD5E1;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            background-color: #F8FAFC;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           HERO IMAGE
+        ===================================================== */
+
+        .hero-image-wrapper {
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
         .image-card-container {
             position: relative;
+
             padding: 10px;
-            background: linear-gradient(145deg, #FFFFFF, #E2E8F0);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #FFFFFF,
+                    #E2E8F0
+                );
+
             border-radius: 20px;
-            box-shadow: 0 20px 40px -10px rgba(11, 27, 61, 0.18), 0 0 0 1px rgba(197, 160, 89, 0.3);
+
+            box-shadow:
+                0 20px 40px -10px rgba(11, 27, 61, 0.18),
+                0 0 0 1px rgba(197, 160, 89, 0.3);
+
             transition: all 0.4s ease;
         }
 
         .hero-image {
             width: 100%;
             max-width: 310px;
+
             aspect-ratio: 3 / 4;
+
             object-fit: cover;
+
             border-radius: 14px;
+
             display: block;
         }
 
-        /* 悬停浮起微动效 */
         .image-card-container:hover {
             transform: translateY(-8px);
-            box-shadow: 0 28px 50px -12px rgba(11, 27, 61, 0.28), 0 0 0 2px var(--accent-gold);
+
+            box-shadow:
+                0 28px 50px -12px rgba(11, 27, 61, 0.28),
+                0 0 0 2px var(--accent-gold);
         }
+
+
+        /* =====================================================
+           GENERAL SECTIONS
+        ===================================================== */
+
+        .section {
+            padding: 80px 0;
+            border-bottom: 1px solid #F1F5F9;
+        }
+
+        .section-title {
+            font-size: 26px;
+            font-weight: 800;
+
+            color: var(--primary-color);
+
+            margin-bottom: 45px;
+
+            text-align: center;
+
+            position: relative;
+
+            padding-bottom: 12px;
+
+            letter-spacing: 0.5px;
+        }
+
+        .section-title::after {
+            content: '';
+
+            position: absolute;
+
+            bottom: 0;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 36px;
+            height: 3px;
+
+            background-color: var(--accent-gold);
+
+            border-radius: 2px;
+        }
+
+
+        /* =====================================================
+           EDUCATION
+        ===================================================== */
+
+        .exp-item {
+            margin-bottom: 35px;
+
+            display: grid;
+
+            grid-template-columns: 200px 1fr;
+
+            gap: 30px;
+        }
+
+        .exp-date {
+            font-size: 13.5px;
+
+            color: var(--text-sub);
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+        .exp-content {
+            border-left: 2px solid #E2E8F0;
+
+            padding-left: 28px;
+        }
+
+        .exp-org {
+            font-size: 18px;
+
+            font-weight: 700;
+
+            color: var(--primary-color);
+
+            margin-bottom: 4px;
+        }
+
+        .exp-title {
+            font-size: 15px;
+
+            font-weight: 600;
+
+            color: var(--text-main);
+
+            margin-bottom: 8px;
+        }
+
+        .exp-desc {
+            font-size: 14.5px;
+
+            color: var(--text-sub);
+
+            list-style: disc;
+
+            margin-left: 18px;
+        }
+
+
+        /* =====================================================
+           EXPERIENCE
+        ===================================================== */
+
+        .experience-item {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 24px;
+
+            padding: 30px 0;
+
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-logo {
+            width: 72px;
+            height: 72px;
+
+            min-width: 72px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background-color: #FFFFFF;
+
+            border: 1px solid #E2E8F0;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 3px 10px rgba(11, 27, 61, 0.05);
+        }
+
+        .experience-logo img {
+            width: 58px;
+            height: 58px;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+        .experience-content {
+            flex: 1;
+        }
+
+        .experience-title {
+            margin: 0;
+
+            font-size: 18px;
+
+            font-weight: 700;
+
+            color: var(--primary-color);
+
+            line-height: 1.4;
+        }
+
+        .experience-company {
+            margin-top: 4px;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            color: var(--text-main);
+        }
+
+        .experience-date {
+            margin-top: 3px;
+
+            margin-bottom: 12px;
+
+            font-size: 13px;
+
+            color: var(--text-sub);
+
+            font-weight: 500;
+
+            letter-spacing: 0.3px;
+        }
+
+        .experience-content ul {
+            margin: 8px 0 0 0;
+
+            padding-left: 20px;
+        }
+
+        .experience-content li {
+            margin-bottom: 8px;
+
+            line-height: 1.65;
+
+            font-size: 14.5px;
+
+            color: var(--text-sub);
+        }
+
+        .experience-content li:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =====================================================
+           SKILLS
+        ===================================================== */
+
+        .skills-content {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fill,
+                    minmax(280px, 1fr)
+                );
+
+            gap: 28px;
+        }
+
+        .skill-group-title {
+            font-size: 16px;
+
+            font-weight: 700;
+
+            color: var(--primary-color);
+
+            margin-bottom: 14px;
+
+            border-bottom: 1px solid #E2E8F0;
+
+            padding-bottom: 8px;
+        }
+
+        .skill-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #F1F5F9;
+
+            color: var(--primary-color);
+
+            padding: 6px 14px;
+
+            font-size: 13px;
+
+            border-radius: 20px;
+
+            font-weight: 500;
+
+            border: 1px solid #E2E8F0;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        .footer {
+            padding: 45px 0;
+
+            background-color: var(--primary-color);
+
+            text-align: center;
+
+            color: #94A3B8;
+
+            font-size: 14px;
+        }
+
+        .footer-socials {
+            display: flex;
+
+            gap: 24px;
+
+            justify-content: center;
+
+            margin-bottom: 16px;
+
+            font-size: 13px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            font-weight: 600;
+        }
+
+        .footer-socials a {
+            color: #F1F5F9;
+        }
+
+        .footer-socials a:hover {
+            color: var(--accent-gold);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE DESIGN
+        ===================================================== */
 
         @media (max-width: 868px) {
-            .hero-grid { flex-direction: column-reverse; text-align: center; gap: 40px; }
-            .hero-btns { justify-content: center; }
-            .hero-image { max-width: 260px; }
+
+            .hero-grid {
+                flex-direction: column-reverse;
+
+                text-align: center;
+
+                gap: 40px;
+            }
+
+            .hero-btns {
+                justify-content: center;
+            }
+
+            .hero-image {
+                max-width: 260px;
+            }
         }
 
-        /* --- 板块通用样式 --- */
-        .section { padding: 80px 0; border-bottom: 1px solid #F1F5F9; }
-        .section-title { font-size: 26px; font-weight: 800; color: var(--primary-color); margin-bottom: 45px; text-align: center; position: relative; padding-bottom: 12px; letter-spacing: 0.5px; }
-        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 36px; height: 3px; background-color: var(--accent-gold); border-radius: 2px; }
-/* ===== Experience Section ===== */
 
-.experience-section {
-    margin-top: 60px;
-}
+        @media (max-width: 768px) {
 
-.experience-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 28px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
+            .container {
+                padding: 0 20px;
+            }
 
-.experience-item:first-of-type {
-    padding-top: 10px;
-}
+            .nav-links {
+                display: none;
+            }
 
-.experience-logo {
-    width: 68px;
-    height: 68px;
-    min-width: 68px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.07);
-    border-radius: 12px;
-    overflow: hidden;
-}
+            .exp-item {
+                grid-template-columns: 1fr;
 
-.experience-logo img {
-    width: 56px;
-    height: 56px;
-    object-fit: contain;
-}
+                gap: 8px;
+            }
 
-.experience-content {
-    flex: 1;
-}
+            .exp-content {
+                border-left: none;
 
-.experience-title {
-    margin: 0;
-    font-size: 1.08rem;
-    font-weight: 600;
-    line-height: 1.4;
-}
+                padding-left: 0;
+            }
 
-.experience-company {
-    margin-top: 4px;
-    font-size: 0.96rem;
-    font-weight: 500;
-}
+            .experience-item {
+                gap: 16px;
+            }
+        }
 
-.experience-date {
-    margin-top: 3px;
-    margin-bottom: 12px;
-    font-size: 0.85rem;
-    opacity: 0.6;
-}
 
-.experience-content ul {
-    margin: 8px 0 0 0;
-    padding-left: 20px;
-}
+        @media (max-width: 600px) {
 
-.experience-content li {
-    margin-bottom: 8px;
-    line-height: 1.65;
-    font-size: 0.92rem;
-}
+            .hero {
+                padding: 65px 0;
+            }
 
-@media (max-width: 600px) {
-    .experience-item {
-        gap: 16px;
-    }
+            .hero-name {
+                font-size: 36px;
+            }
 
-    .experience-logo {
-        width: 54px;
-        height: 54px;
-        min-width: 54px;
-        border-radius: 10px;
-    }
+            .hero-title {
+                font-size: 12px;
+                letter-spacing: 1.4px;
+            }
 
-    .experience-logo img {
-        width: 44px;
-        height: 44px;
-    }
+            .hero-bio {
+                font-size: 15px;
+            }
 
-    .experience-title {
-        font-size: 1rem;
-    }
+            .experience-logo {
+                width: 58px;
+                height: 58px;
 
-    .experience-content li {
-        font-size: 0.88rem;
-    }
-}
-        /* --- 教育经历 --- */
-        .exp-item { margin-bottom: 35px; display: grid; grid-template-columns: 200px 1fr; gap: 30px; }
-        .exp-date { font-size: 13.5px; color: var(--text-sub); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-        .exp-content { border-left: 2px solid #E2E8F0; padding-left: 28px; }
-        .exp-org { font-size: 18px; font-weight: 700; color: var(--primary-color); margin-bottom: 4px; }
-        .exp-title { font-size: 15px; font-weight: 600; color: var(--text-main); margin-bottom: 8px; }
-        .exp-desc { font-size: 14.5px; color: var(--text-sub); list-style: disc; margin-left: 18px; }
-        @media (max-width: 768px) { .exp-item { grid-template-columns: 1fr; gap: 8px; } .exp-content { border-left: none; padding-left: 0; } }
+                min-width: 58px;
 
-        /* --- 技能板块 --- */
-        .skills-content { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; }
-        .skill-group-title { font-size: 16px; font-weight: 700; color: var(--primary-color); margin-bottom: 14px; border-bottom: 1px solid #E2E8F0; padding-bottom: 8px; }
-        .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill-tag { background-color: #F1F5F9; color: var(--primary-color); padding: 6px 14px; font-size: 13px; border-radius: 20px; font-weight: 500; border: 1px solid #E2E8F0; }
+                border-radius: 10px;
+            }
 
-        /* --- 页脚 --- */
-        .footer { padding: 45px 0; background-color: var(--primary-color); text-align: center; color: #94A3B8; font-size: 14px; }
-        .footer-socials { display: flex; gap: 24px; justify-content: center; margin-bottom: 16px; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; }
-        .footer-socials a { color: #F1F5F9; }
-        .footer-socials a:hover { color: var(--accent-gold); }
+            .experience-logo img {
+                width: 46px;
+                height: 46px;
+            }
+
+            .experience-title {
+                font-size: 16px;
+            }
+
+            .experience-company {
+                font-size: 14px;
+            }
+
+            .experience-content li {
+                font-size: 13.5px;
+            }
+
+            .btn {
+                padding: 11px 20px;
+
+                font-size: 12px;
+            }
+        }
+
     </style>
 </head>
+
+
 <body>
 
-    <!-- 导航栏 -->
+
+    <!-- =====================================================
+         NAVIGATION
+    ===================================================== -->
+
     <nav class="navbar">
+
         <div class="container nav-content">
-            <div class="nav-logo">YUTONG WANG (RITA)</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+
+            <div class="nav-logo">
+                YUTONG WANG (RITA)
             </div>
+
+            <div class="nav-links">
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#education">
+                    Education
+                </a>
+
+                <a href="#experience">
+                    Experience
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
         </div>
+
     </nav>
 
-    <!-- 首页 Hero 区域 -->
+
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+
     <header id="about" class="hero">
+
         <div class="container">
+
             <div class="hero-grid">
-                
-                <!-- 左侧：文字描述与按钮 -->
+
+
+                <!-- LEFT -->
                 <div class="hero-text">
-                    <span class="hero-badge">Seoul National University GSIS</span>
-                    <h1 class="hero-name">王语彤 (Yutong Wang)</h1>
-                    <p class="hero-title">International Commerce | Global Business Strategy | Brand Marketing Analytics</p>
-                    <p class="hero-bio">👋 Hi, I'm Yutong Wang (Rita). Master’s Candidate at <strong>Seoul National University (SNU GSIS)</strong>, specializing in International Commerce and International Business Management. My work bridges qualitative communication theory, digital branding, and quantitative data analysis (Python, NLP).</p>
+
+                    <span class="hero-badge">
+                        Seoul National University GSIS
+                    </span>
+
+
+                    <h1 class="hero-name">
+                        王语彤 (Yutong Wang)
+                    </h1>
+
+
+                    <p class="hero-title">
+                        International Commerce |
+                        Global Business Strategy |
+                        Brand Marketing Analytics
+                    </p>
+
+
+                    <p class="hero-bio">
+                        👋 Hi, I'm Yutong Wang (Rita).
+                        Master’s Candidate at
+                        <strong>Seoul National University (SNU GSIS)</strong>,
+                        specializing in International Commerce and International
+                        Business Management. My work bridges qualitative
+                        communication theory, digital branding, and quantitative
+                        data analysis (Python, NLP).
+                    </p>
+
+
                     <div class="hero-btns">
-                        <a href="https://linkedin.com" class="btn btn-primary" target="_blank">LinkedIn Profile</a>
-                        <a href="https://yutongwang759-code.github.io/Resume.pdf" class="btn btn-secondary" target="_blank">Download CV (PDF)</a>
+
+                        <a
+                            href="https://www.linkedin.com/in/rita-wang-9108ab3b3/"
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn Profile
+                        </a>
+
+
+                        <a
+                            href="Resume.pdf"
+                            class="btn btn-secondary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View CV
+                        </a>
+
                     </div>
+
                 </div>
 
-                <!-- 右侧：照片高级卡片设计 -->
+
+
+                <!-- RIGHT -->
                 <div class="hero-image-wrapper">
+
                     <div class="image-card-container">
-                        <img src="profile.jpg" alt="Yutong Wang Portrait" class="hero-image">
+
+                        <img
+                            src="profile.jpg"
+                            alt="Yutong Wang Portrait"
+                            class="hero-image"
+                        >
+
                     </div>
+
                 </div>
+
 
             </div>
+
         </div>
+
     </header>
 
-    <!-- 教育背景板块 -->
+
+
+    <!-- =====================================================
+         EDUCATION
+    ===================================================== -->
+
     <section id="education" class="section">
+
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            
-            <div class="exp-item">
-                <div class="exp-date">Sep 2026 - Present</div>
-                <div class="exp-content">
-                    <div class="exp-org">Seoul National University (SNU)</div>
-                    <div class="exp-title">M.A. Candidate in International Studies (GSIS)</div>
-                    <ul class="exp-desc">
-                        <li>Major: International Commerce & International Business Management</li>
-                    </ul>
-                </div>
-            </div>
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+
+            <!-- SNU -->
 
             <div class="exp-item">
-                <div class="exp-date">Sep 2022 - Jun 2026</div>
-                <div class="exp-content">
-                    <div class="exp-org">Soochow University</div>
-                    <div class="exp-title">B.A. in Advertising</div>
-                    <ul class="exp-desc">
-                        <li>GPA: 3.7 / 4.0</li>
-                        <li>Undergraduate Thesis Excellence Award (2026)</li>
-                    </ul>
+
+                <div class="exp-date">
+                    Sep 2026 - Present
                 </div>
+
+                <div class="exp-content">
+
+                    <div class="exp-org">
+                        Seoul National University (SNU)
+                    </div>
+
+                    <div class="exp-title">
+                        M.A. Candidate in International Studies (GSIS)
+                    </div>
+
+                    <ul class="exp-desc">
+
+                        <li>
+                            Major: International Commerce &amp;
+                            International Business Management
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SOOCHOW -->
+
+            <div class="exp-item">
+
+                <div class="exp-date">
+                    Sep 2022 - Jun 2026
+                </div>
+
+                <div class="exp-content">
+
+                    <div class="exp-org">
+                        Soochow University
+                    </div>
+
+                    <div class="exp-title">
+                        B.A. in Advertising
+                    </div>
+
+                    <ul class="exp-desc">
+
+                        <li>
+                            GPA: 3.7 / 4.0
+                        </li>
+
+                        <li>
+                            Undergraduate Thesis Excellence Award (2026)
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
         </div>
+
     </section>
-<section id="experience">
-    <h2>Experience</h2>
 
-    <div class="experience-item">
-        <div class="experience-logo">
-            <img src="bosch-logo.jpg" alt="Bosch logo">
-        </div>
 
-        <div class="experience-content">
-            <h3 class="experience-title">
-                Business Compliance &amp; Strategy Intern
-            </h3>
 
-            <div class="experience-company">
-                Bosch
+    <!-- =====================================================
+         EXPERIENCE
+    ===================================================== -->
+
+    <section id="experience" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Experience
+            </h2>
+
+
+            <!-- ================= BOSCH ================= -->
+
+            <div class="experience-item">
+
+                <div class="experience-logo">
+
+                    <img
+                        src="Boschlogo.jpeg"
+                        alt="Bosch logo"
+                    >
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <h3 class="experience-title">
+                        Business Compliance &amp; Strategy Intern
+                    </h3>
+
+
+                    <div class="experience-company">
+                        Bosch
+                    </div>
+
+
+                    <div class="experience-date">
+                        Mar 2026 – Jul 2026
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Evaluated regulatory, legal, and market frameworks
+                            to support Bosch Engineering (BEG)’s strategic pivot
+                            from customized technical consulting services to
+                            standardized product offerings.
+                        </li>
+
+                        <li>
+                            Developed executive pitch decks and marketing
+                            materials for newly standardized solutions,
+                            supporting enterprise client engagement at
+                            high-profile events including Auto China 2026.
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
-            <div class="experience-date">
-                Mar 2026 – Jul 2026
+
+
+            <!-- ================= TONGCHENG ================= -->
+
+            <div class="experience-item">
+
+                <div class="experience-logo">
+
+                    <img
+                        src="Tongchenglogo.png"
+                        alt="Tongcheng Travel logo"
+                    >
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <h3 class="experience-title">
+                        HRBP Intern
+                    </h3>
+
+
+                    <div class="experience-company">
+                        Tongcheng Travel
+                    </div>
+
+
+                    <div class="experience-date">
+                        Jun 2025 – Sep 2025
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Supported the recruitment of regional managers
+                            and contributed to recruitment strategy development,
+                            achieving a
+                            <strong>100% recruitment completion rate</strong>
+                            and successfully filling City Manager positions
+                            across Southwest China.
+                        </li>
+
+                        <li>
+                            Assisted in the implementation of the promotion
+                            plan for the car-rental business line.
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
-            <ul>
-                <li>
-                    Evaluated regulatory, legal, and market frameworks to support
-                    Bosch Engineering (BEG)’s strategic pivot from customized
-                    technical consulting services to standardized product offerings.
-                </li>
-                <li>
-                    Developed executive pitch decks and marketing materials for
-                    newly standardized solutions, supporting enterprise client
-                    engagement at high-profile events including Auto China 2026.
-                </li>
-            </ul>
-        </div>
-    </div>
 
 
-    <div class="experience-item">
-        <div class="experience-logo">
-            <img src="tongcheng-logo.png" alt="Tongcheng Travel logo">
-        </div>
+            <!-- ================= IPG / UM ================= -->
 
-        <div class="experience-content">
-            <h3 class="experience-title">
-                HRBP Intern
-            </h3>
+            <div class="experience-item">
 
-            <div class="experience-company">
-                Tongcheng Travel
+                <div class="experience-logo">
+
+                    <img
+                        src="UMlogo.jpeg"
+                        alt="UM logo"
+                    >
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <h3 class="experience-title">
+                        Strategy Planning Intern
+                    </h3>
+
+
+                    <div class="experience-company">
+                        IPG – UM
+                    </div>
+
+
+                    <div class="experience-date">
+                        Jun 2024 – Sep 2024
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Tracked and evaluated core campaign metrics for
+                            flagship clients including New Balance and
+                            Burger King during high-volume Summer Sale
+                            campaigns, synthesizing weekly and monthly
+                            performance reports to inform media strategy
+                            optimization.
+                        </li>
+
+                        <li>
+                            Independently planned and executed
+                            <strong>Impact Day</strong>, an internal
+                            corporate ESG initiative, managing stakeholder
+                            alignment, event logistics, and strategic
+                            communications.
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
-            <div class="experience-date">
-                Jun 2025 – Sep 2025
-            </div>
-
-            <ul>
-                <li>
-                    Supported the recruitment of regional managers and contributed
-                    to recruitment strategy development, achieving a 100% recruitment
-                    completion rate and successfully filling City Manager positions
-                    across Southwest China.
-                </li>
-                <li>
-                    Assisted in the implementation of the promotion plan for the
-                    car-rental business line.
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="experience-item">
-        <div class="experience-logo">
-            <img src="um-logo.jpg" alt="UM logo">
         </div>
 
-        <div class="experience-content">
-            <h3 class="experience-title">
-                Strategy Planning Intern
-            </h3>
+    </section>
 
-            <div class="experience-company">
-                IPG – UM
-            </div>
 
-            <div class="experience-date">
-                Jun 2024 – Sep 2024
-            </div>
 
-            <ul>
-                <li>
-                    Tracked and evaluated core campaign metrics for flagship
-                    clients including New Balance and Burger King during
-                    high-volume Summer Sale campaigns, synthesizing weekly and
-                    monthly performance reports to inform media strategy optimization.
-                </li>
-                <li>
-                    Independently planned and executed Impact Day, an internal
-                    corporate ESG initiative, managing stakeholder alignment,
-                    event logistics, and strategic communications.
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-    <!-- 技能与语言板块 -->
+    <!-- =====================================================
+         SKILLS & LANGUAGES
+    ===================================================== -->
+
     <section id="skills" class="section">
+
         <div class="container">
-            <h2 class="section-title">Skills & Languages</h2>
+
+            <h2 class="section-title">
+                Skills &amp; Languages
+            </h2>
+
+
             <div class="skills-content">
-                
-                <div class="skill-group">
-                    <h3 class="skill-group-title">Technical & Data</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python (Pandas, NLP, Jieba, WordCloud)</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Data Monitoring</span>
-                        <span class="skill-tag">Git / GitHub</span>
-                    </div>
-                </div>
+
+
+                <!-- TECHNICAL -->
 
                 <div class="skill-group">
-                    <h3 class="skill-group-title">Business & PR</h3>
+
+                    <h3 class="skill-group-title">
+                        Technical &amp; Data
+                    </h3>
+
                     <div class="skill-tags">
-                        <span class="skill-tag">International Trade</span>
-                        <span class="skill-tag">Global Business Strategy</span>
-                        <span class="skill-tag">Crisis PR</span>
-                        <span class="skill-tag">Influencer Marketing</span>
+
+                        <span class="skill-tag">
+                            Python (Pandas, NLP, Jieba, WordCloud)
+                        </span>
+
+                        <span class="skill-tag">
+                            SQL
+                        </span>
+
+                        <span class="skill-tag">
+                            Data Monitoring
+                        </span>
+
+                        <span class="skill-tag">
+                            Git / GitHub
+                        </span>
+
                     </div>
+
                 </div>
 
+
+
+                <!-- BUSINESS -->
+
                 <div class="skill-group">
-                    <h3 class="skill-group-title">Languages</h3>
+
+                    <h3 class="skill-group-title">
+                        Business &amp; PR
+                    </h3>
+
                     <div class="skill-tags">
-                        <span class="skill-tag">Mandarin (Native)</span>
-                        <span class="skill-tag">English (Executive-level / IELTS 7.5)</span>
-                        <span class="skill-tag">Korean (Fluent / TOPIK 6)</span>
+
+                        <span class="skill-tag">
+                            International Trade
+                        </span>
+
+                        <span class="skill-tag">
+                            Global Business Strategy
+                        </span>
+
+                        <span class="skill-tag">
+                            Crisis PR
+                        </span>
+
+                        <span class="skill-tag">
+                            Influencer Marketing
+                        </span>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- LANGUAGES -->
+
+                <div class="skill-group">
+
+                    <h3 class="skill-group-title">
+                        Languages
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span class="skill-tag">
+                            Mandarin (Native)
+                        </span>
+
+                        <span class="skill-tag">
+                            English (IELTS 7.5)
+                        </span>
+
+                        <span class="skill-tag">
+                            Korean (TOPIK 6)
+                        </span>
+
+                    </div>
+
+                </div>
+
 
             </div>
+
         </div>
+
     </section>
-<a href="Resume.pdf" class="btn btn-secondary" target="_blank">
-    Download CV (PDF)
-</a>
-    <a href="https://www.linkedin.com/in/rita-wang-9108ab3b3/" target="_blank">
-    LinkedIn
-</a>
-    <!-- 页脚与联系方式 -->
+
+
+
+    <!-- =====================================================
+         FOOTER / CONTACT
+    ===================================================== -->
+
     <footer id="contact" class="footer">
+
         <div class="container">
+
             <div class="footer-socials">
-                <a href="mailto:ritawang0486@snu.ac.kr">Email</a>
-                <a href="https://github.com/yutongwang759-code" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+
+                <a href="mailto:ritawang0486@snu.ac.kr">
+                    Email
+                </a>
+
+
+                <a
+                    href="https://github.com/yutongwang759-code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/rita-wang-9108ab3b3/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+
+                <a
+                    href="Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    CV
+                </a>
+
             </div>
-            <p>&copy; 2026 Yutong Wang. All Rights Reserved.</p>
-            <p style="margin-top: 6px; font-size: 13px; opacity: 0.8;">Master's Candidate in International Studies, SNU GSIS</p>
+
+
+            <p>
+                &copy; 2026 Yutong Wang. All Rights Reserved.
+            </p>
+
+
+            <p
+                style="
+                    margin-top: 6px;
+                    font-size: 13px;
+                    opacity: 0.8;
+                "
+            >
+                Master's Candidate in International Studies,
+                SNU GSIS
+            </p>
+
         </div>
+
     </footer>
 
+
 </body>
+
 </html>
