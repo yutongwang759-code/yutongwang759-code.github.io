@@ -90,7 +90,103 @@
         .section { padding: 80px 0; border-bottom: 1px solid #F1F5F9; }
         .section-title { font-size: 26px; font-weight: 800; color: var(--primary-color); margin-bottom: 45px; text-align: center; position: relative; padding-bottom: 12px; letter-spacing: 0.5px; }
         .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 36px; height: 3px; background-color: var(--accent-gold); border-radius: 2px; }
+/* ===== Experience Section ===== */
 
+.experience-section {
+    margin-top: 60px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.experience-item:first-of-type {
+    padding-top: 10px;
+}
+
+.experience-logo {
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.experience-logo img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-title {
+    margin: 0;
+    font-size: 1.08rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.experience-company {
+    margin-top: 4px;
+    font-size: 0.96rem;
+    font-weight: 500;
+}
+
+.experience-date {
+    margin-top: 3px;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+.experience-content ul {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+}
+
+.experience-content li {
+    margin-bottom: 8px;
+    line-height: 1.65;
+    font-size: 0.92rem;
+}
+
+@media (max-width: 600px) {
+    .experience-item {
+        gap: 16px;
+    }
+
+    .experience-logo {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+        border-radius: 10px;
+    }
+
+    .experience-logo img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .experience-title {
+        font-size: 1rem;
+    }
+
+    .experience-content li {
+        font-size: 0.88rem;
+    }
+}
         /* --- 教育经历 --- */
         .exp-item { margin-bottom: 35px; display: grid; grid-template-columns: 200px 1fr; gap: 30px; }
         .exp-date { font-size: 13.5px; color: var(--text-sub); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
@@ -186,7 +282,111 @@
 
         </div>
     </section>
+<section id="experience">
+    <h2>Experience</h2>
 
+    <div class="experience-item">
+        <div class="experience-logo">
+            <img src="bosch-logo.jpg" alt="Bosch logo">
+        </div>
+
+        <div class="experience-content">
+            <h3 class="experience-title">
+                Business Compliance &amp; Strategy Intern
+            </h3>
+
+            <div class="experience-company">
+                Bosch
+            </div>
+
+            <div class="experience-date">
+                Mar 2026 – Jul 2026
+            </div>
+
+            <ul>
+                <li>
+                    Evaluated regulatory, legal, and market frameworks to support
+                    Bosch Engineering (BEG)’s strategic pivot from customized
+                    technical consulting services to standardized product offerings.
+                </li>
+                <li>
+                    Developed executive pitch decks and marketing materials for
+                    newly standardized solutions, supporting enterprise client
+                    engagement at high-profile events including Auto China 2026.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="experience-item">
+        <div class="experience-logo">
+            <img src="tongcheng-logo.png" alt="Tongcheng Travel logo">
+        </div>
+
+        <div class="experience-content">
+            <h3 class="experience-title">
+                HRBP Intern
+            </h3>
+
+            <div class="experience-company">
+                Tongcheng Travel
+            </div>
+
+            <div class="experience-date">
+                Jun 2025 – Sep 2025
+            </div>
+
+            <ul>
+                <li>
+                    Supported the recruitment of regional managers and contributed
+                    to recruitment strategy development, achieving a 100% recruitment
+                    completion rate and successfully filling City Manager positions
+                    across Southwest China.
+                </li>
+                <li>
+                    Assisted in the implementation of the promotion plan for the
+                    car-rental business line.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="experience-item">
+        <div class="experience-logo">
+            <img src="um-logo.jpg" alt="UM logo">
+        </div>
+
+        <div class="experience-content">
+            <h3 class="experience-title">
+                Strategy Planning Intern
+            </h3>
+
+            <div class="experience-company">
+                IPG – UM
+            </div>
+
+            <div class="experience-date">
+                Jun 2024 – Sep 2024
+            </div>
+
+            <ul>
+                <li>
+                    Tracked and evaluated core campaign metrics for flagship
+                    clients including New Balance and Burger King during
+                    high-volume Summer Sale campaigns, synthesizing weekly and
+                    monthly performance reports to inform media strategy optimization.
+                </li>
+                <li>
+                    Independently planned and executed Impact Day, an internal
+                    corporate ESG initiative, managing stakeholder alignment,
+                    event logistics, and strategic communications.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
     <!-- 技能与语言板块 -->
     <section id="skills" class="section">
         <div class="container">
